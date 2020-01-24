@@ -1,0 +1,12 @@
+{
+  "name": "slate-react-presentation",
+  "version": "0.0.0",
+  "description": "a presentation component for the slate editor",
+  "main": "index.js",
+  "repository": "https://github.com/rockettomatooo/slate-react-presentation.git",
+  "author": "Samuel Stecher <samustecher99@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.12.0"
+  },
+}
