@@ -1,6 +1,6 @@
 {
   "name": "slate-react-presentation",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "a presentation component for the slate editor",
   "main": "lib/index.js",
   "repository": "https://github.com/rockettomatooo/slate-react-presentation.git",
