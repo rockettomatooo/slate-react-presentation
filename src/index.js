@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 const SlatePresentationContext = React.createContext(null);
 
 function useSlatePresentation() {
-    return useContext(SlatePresentationContext);
+    return React.useContext(SlatePresentationContext);
 }
 
 function isText(value) {
