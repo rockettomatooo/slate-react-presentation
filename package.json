@@ -12,14 +12,14 @@
         "prepublish": "yarn build"
     },
     "peerDependencies": {
-        "react": "^16.12.0",
-        "slate": "^0.55.0",
-        "slate-react": "^0.57.1"
+        "react": "^16.12.0"
     },
     "devDependencies": {
         "@babel/cli": "^7.8.3",
         "@babel/core": "^7.8.3",
         "@babel/preset-env": "^7.8.3",
-        "@babel/preset-react": "^7.8.3"
+        "@babel/preset-react": "^7.8.3",
+        "slate": "^0.55.0",
+        "slate-react": "^0.57.1"
     }
 }
