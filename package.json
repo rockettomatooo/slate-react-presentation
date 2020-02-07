@@ -1,25 +1,25 @@
 {
-    "name": "slate-react-presentation",
-    "version": "0.0.2",
-    "description": "a presentation component for the slate editor",
-    "main": "lib/index.js",
-    "types": "./typings.d.ts",
-    "repository": "https://github.com/rockettomatooo/slate-react-presentation.git",
-    "author": "Samuel Stecher <samustecher99@gmail.com>",
-    "license": "MIT",
-    "scripts": {
-        "build": "babel src --out-dir lib --source-maps",
-        "prepublish": "yarn build"
-    },
-    "peerDependencies": {
-        "react": "^16.12.0"
-    },
-    "devDependencies": {
-        "@babel/cli": "^7.8.3",
-        "@babel/core": "^7.8.3",
-        "@babel/preset-env": "^7.8.3",
-        "@babel/preset-react": "^7.8.3",
-        "slate": "^0.55.0",
-        "slate-react": "^0.57.1"
-    }
+  "name": "slate-react-presentation",
+  "version": "0.0.2",
+  "description": "a presentation component for the slate editor",
+  "main": "lib/index.js",
+  "types": "./typings.d.ts",
+  "repository": "https://github.com/rockettomatooo/slate-react-presentation.git",
+  "author": "Samuel Stecher <samustecher99@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src --out-dir lib --source-maps",
+    "prepublish": "yarn build"
+  },
+  "peerDependencies": {
+    "react": "^16.12.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "slate": "^0.55.0",
+    "slate-react": "^0.57.1"
+  }
 }
