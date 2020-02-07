@@ -1,6 +1,6 @@
 {
     "name": "slate-react-presentation",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "a presentation component for the slate editor",
     "main": "lib/index.js",
     "types": "./typings.d.ts",
