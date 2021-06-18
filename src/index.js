@@ -22,9 +22,9 @@ function Element({ element = { children: [] } }) {
 }
 
 function Leaf({ leaf = { text: '' } }) {
-    const { renderLeaf } = useSlatePresentation();
+    const { renderLeaf, LeafWrapper } = useSlatePresentation();
 
-    return <React.Fragment>{renderLeaf({ attributes: {}, children: <span>{leaf.text}</span>, leaf, text: leaf.text })}</React.Fragment>;
+    return <React.Fragment>{renderLeaf({ attributes: {}, children: <LeafWrapper>{leaf.text}</LeafWrapper>, leaf, text: leaf.text })}</React.Fragment>;
 }
 
 function Children({ children = [] }) {
@@ -41,9 +41,9 @@ function Children({ children = [] }) {
     );
 }
 
-export function SlateReactPresentation({ value = [], renderElement = props => <DefaultElement {...props} />, renderLeaf = props => <DefaultLeaf {...props} /> }) {
+export function SlateReactPresentation({ value = [], renderElement = props => <DefaultElement {...props} />, renderLeaf = props => <DefaultLeaf {...props} />, LeafWrapper = "span" }) {
     return (
-        <SlatePresentationContext.Provider value={{ renderElement, renderLeaf }}>
+        <SlatePresentationContext.Provider value={{ renderElement, renderLeaf, LeafWrapper }}>
             <Children children={value} />
         </SlatePresentationContext.Provider>
     );

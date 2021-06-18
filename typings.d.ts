@@ -7,6 +7,7 @@ declare module 'slate-react-presentation' {
       value?: Node[];
       renderElement?: EditableProps['renderElement'];
       renderLeaf?: EditableProps['renderLeaf'];
+      LeafWrapper?: React.ComponentType | keyof JSX.IntrinsicElements;
     }
     export const SlateReactPresentation: React.FC<SlateReactPresentationProps>;
   }
