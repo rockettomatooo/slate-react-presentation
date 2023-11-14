@@ -2,24 +2,47 @@
   "name": "slate-react-presentation",
   "version": "0.1.1",
   "description": "a presentation component for the slate editor",
-  "main": "lib/index.js",
-  "types": "./typings.d.ts",
+  "keywords": [
+    "slate",
+    "richt text editing",
+    "wysiwyg"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.mjs",
   "repository": "https://github.com/rockettomatooo/slate-react-presentation.git",
   "author": "Samuel Stecher <samustecher99@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "babel src --out-dir lib --source-maps",
+    "build": "tsup src/index.tsx",
     "prepublish": "yarn build"
+  },
+  "dependencies": {
+    "is-plain-object": "^5.0.0"
   },
   "peerDependencies": {
     "react": "*"
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.3",
-    "@babel/core": "^7.8.3",
-    "@babel/preset-env": "^7.8.3",
-    "@babel/preset-react": "^7.8.3",
-    "slate": "^0.55.0",
-    "slate-react": "^0.57.1"
+    "@types/react": "^18.2.37",
+    "react": "^18.2.0",
+    "slate": "^0.100.0",
+    "slate-react": "^0.101.0",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  },
+  "tsup": {
+    "entry": [
+      "src/index.tsx"
+    ],
+    "splitting": false,
+    "sourcemap": true,
+    "clean": true,
+    "dts": true,
+    "format": [
+      "cjs",
+      "esm",
+      "iife"
+    ]
   }
 }
