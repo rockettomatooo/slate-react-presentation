@@ -22,7 +22,7 @@ export type SlatePresentationContextProps = {
 
 export type SlateReactPresentationProps = {
   value?: Descendant[]
-  renderElement: EditableProps['renderElement']
-  renderLeaf: EditableProps['renderLeaf']
-  LeafWrapper: React.ComponentType | keyof JSX.IntrinsicElements
+  renderElement?: EditableProps['renderElement']
+  renderLeaf?: EditableProps['renderLeaf']
+  LeafWrapper?: React.ComponentType | keyof JSX.IntrinsicElements
 }
