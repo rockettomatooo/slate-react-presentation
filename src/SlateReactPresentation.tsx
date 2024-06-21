@@ -30,7 +30,7 @@ function Leaf({ leaf = { text: '' } }: LeafProps) {
 
   return (
     <React.Fragment>
-      {renderLeaf?.({ attributes: {} as any, children: <LeafWrapper>{leaf.text}</LeafWrapper>, leaf, text: leaf })}
+      {renderLeaf?.({ attributes: {} as any, children: <LeafWrapper>{leaf.text === '' ? '\uFEFF' : leaf.text}</LeafWrapper>, leaf, text: leaf })}
     </React.Fragment>
   )
 }
